@@ -1,3 +1,9 @@
+<p align="center">
+  <img width="500" src="./title.svg" alt="GraphPooling Logo" />
+</p>
+
+------
+
 This is a Pytorch implementation of A Comprehensive Graph Pooling Benchmark: Effectiveness, Robustness and Generalizability, which implements 17 pooling algorithms based on PYG.  In order to facilitate subsequent researchers to use the code, we put the code for graph classification/node classification/graph regression into the juypter notebook so that other researchers can quickly locate the graph pooling algorithm they need.
 
 For graph classification/node classification tasks: Users can easily use any of the ipynb files in the classification folder, each clearly titled with all types of graph pooling algorithms. We directly show how to use these pooling models. All dependency functions are under specific subtitles. Since we have manually defined the functions that vary with PYG versions, you almost don't need to worry about PYG version issues and can easily reproduce all pooling methods. For example, if you want to use KMISPool, you can directly open any file, find it, and copy it to your codebase.

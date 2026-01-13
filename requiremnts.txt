@@ -1,0 +1,10 @@
+transformers
+torch
+torch_geometric
+pandas
+matplotlib
+scikit-learn
+psutil
+torch_sparse
+torch_scatter
+ogb
