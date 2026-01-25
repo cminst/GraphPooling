@@ -152,11 +152,6 @@ def compute_max_num_nodes(dataset, cap: Optional[int] = None) -> int:
 
 
 class TruncateToMaxNodes:
-    """
-    If a graph has more than `max_nodes`, randomly subsample nodes and take the induced subgraph.
-    This is ONLY meant as a last-resort to make dense pooling (DiffPool/MinCutPool) runnable on
-    large TU datasets. Use with care (it changes the dataset).
-    """
     def __init__(self, max_nodes: int, seed: int = 0):
         self.max_nodes = int(max_nodes)
         self.seed = int(seed)
@@ -164,20 +159,26 @@ class TruncateToMaxNodes:
     def __call__(self, data: Data) -> Data:
         if data.num_nodes is None or data.num_nodes <= self.max_nodes:
             return data
-        # Deterministic subsampling per-graph given global seed:
+
         g = torch.Generator()
         g.manual_seed(self.seed + int(data.num_nodes))
         perm = torch.randperm(data.num_nodes, generator=g)[: self.max_nodes]
         perm, _ = perm.sort()
-        edge_index, edge_attr = subgraph(perm, data.edge_index, data.edge_attr, relabel_nodes=True)
+
+        edge_index, edge_attr = subgraph(
+            perm, data.edge_index, data.edge_attr, relabel_nodes=True
+        )
         x = data.x[perm] if data.x is not None else None
+
         out = Data(
             x=x,
             edge_index=edge_index,
             edge_attr=edge_attr,
             y=data.y,
+            num_nodes=int(perm.numel()),
         )
         return out
+
 
 class SafeOneHotDegree:
     """
