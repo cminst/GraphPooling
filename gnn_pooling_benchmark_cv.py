@@ -175,7 +175,7 @@ class TruncateToMaxNodes:
             edge_index=edge_index,
             edge_attr=edge_attr,
             y=data.y,
-            num_nodes=int(perm.numel()),
+            #num_nodes=int(perm.numel()),
         )
         return out
 
