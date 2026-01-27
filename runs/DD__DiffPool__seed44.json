@@ -1,22 +1,23 @@
 {
-  "model": "ASAP",
-  "mean_test_acc": 0.7259411196911196,
-  "std_test_acc": 0.03770837454338876,
+  "model": "DiffPool",
+  "mean_test_acc": 0.7639794292336666,
+  "std_test_acc": 0.03216258131180532,
   "folds": [
     {
       "fold": 1,
-      "val_acc": 0.8514851485148515,
-      "test_acc": 0.7053571428571429,
-      "test_loss": 0.593602044241769,
+      "val_acc": 0.8113207547169812,
+      "test_acc": 0.788135593220339,
+      "test_loss": 5.188327053845939,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -37,25 +38,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 23,
-        "best_val_acc": 0.8514851485148515,
-        "final_val_acc": 0.8514851485148515,
-        "final_val_loss": 0.4935230571444672
+        "best_epoch": 7,
+        "best_val_acc": 0.8113207547169812,
+        "final_val_acc": 0.8113207547169812,
+        "final_val_loss": 5.097883665336753
       }
     },
     {
       "fold": 2,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.75,
-      "test_loss": 0.5513135620525905,
+      "val_acc": 0.8301886792452831,
+      "test_acc": 0.711864406779661,
+      "test_loss": 2.9827701681751315,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -83,32 +85,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 71,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5615211766545135
+        "best_epoch": 17,
+        "best_val_acc": 0.8301886792452831,
+        "final_val_acc": 0.8301886792452831,
+        "final_val_loss": 2.9106677343260565
       }
     },
     {
       "fold": 3,
-      "val_acc": 0.7821782178217822,
-      "test_acc": 0.75,
-      "test_loss": 0.5282128538404193,
+      "val_acc": 0.8207547169811321,
+      "test_acc": 0.7627118644067796,
+      "test_loss": 2.6967872361005365,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -129,32 +132,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 21,
-        "best_val_acc": 0.7821782178217822,
-        "final_val_acc": 0.7821782178217822,
-        "final_val_loss": 0.5365448800644071
+        "best_epoch": 19,
+        "best_val_acc": 0.8207547169811321,
+        "final_val_acc": 0.8207547169811321,
+        "final_val_loss": 2.7913678502136805
       }
     },
     {
       "fold": 4,
-      "val_acc": 0.7722772277227723,
-      "test_acc": 0.7297297297297297,
-      "test_loss": 5.106510225717012,
+      "val_acc": 0.8490566037735849,
+      "test_acc": 0.7288135593220338,
+      "test_loss": 5.133578340886003,
       "best_override": {
-        "pool_ratio": 0.4
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -175,25 +179,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 101,
-        "best_val_acc": 0.7722772277227723,
-        "final_val_acc": 0.7722772277227723,
-        "final_val_loss": 0.6102960422487542
+        "best_epoch": 6,
+        "best_val_acc": 0.8490566037735849,
+        "final_val_acc": 0.8490566037735849,
+        "final_val_loss": 5.040351507798681
       }
     },
     {
       "fold": 5,
-      "val_acc": 0.8217821782178217,
-      "test_acc": 0.6756756756756757,
-      "test_loss": 0.6346743471987613,
+      "val_acc": 0.8207547169811321,
+      "test_acc": 0.7627118644067796,
+      "test_loss": 1.7694132732132735,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.1,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -213,7 +218,7 @@
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
         "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_1": 0.1,
         "diffpool_ratio_2": 0.25,
         "mincut_ratio_1": 0.5,
         "mincut_ratio_2": 0.5,
@@ -221,25 +226,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 74,
-        "best_val_acc": 0.8217821782178217,
-        "final_val_acc": 0.8217821782178217,
-        "final_val_loss": 0.5306766688233555
+        "best_epoch": 51,
+        "best_val_acc": 0.8207547169811321,
+        "final_val_acc": 0.8207547169811321,
+        "final_val_loss": 1.9264020919799805
       }
     },
     {
       "fold": 6,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7567567567567568,
-      "test_loss": 0.5828444216702435,
+      "val_acc": 0.8207547169811321,
+      "test_acc": 0.8050847457627118,
+      "test_loss": 2.4609431291030623,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.1,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -259,7 +265,7 @@
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
         "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_1": 0.1,
         "diffpool_ratio_2": 0.25,
         "mincut_ratio_1": 0.5,
         "mincut_ratio_2": 0.5,
@@ -267,25 +273,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 82,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.6867664497677642
+        "best_epoch": 8,
+        "best_val_acc": 0.8207547169811321,
+        "final_val_acc": 0.8207547169811321,
+        "final_val_loss": 2.361320967944163
       }
     },
     {
       "fold": 7,
-      "val_acc": 0.7623762376237624,
-      "test_acc": 0.6576576576576577,
-      "test_loss": 0.6083841017774634,
+      "val_acc": 0.839622641509434,
+      "test_acc": 0.7966101694915254,
+      "test_loss": 2.7861369383537165,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -313,32 +320,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 4,
-        "best_val_acc": 0.7623762376237624,
-        "final_val_acc": 0.7623762376237624,
-        "final_val_loss": 0.6067400273710194
+        "best_epoch": 20,
+        "best_val_acc": 0.839622641509434,
+        "final_val_acc": 0.839622641509434,
+        "final_val_loss": 2.6909326337418467
       }
     },
     {
       "fold": 8,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7747747747747747,
-      "test_loss": 0.5057351170359431,
+      "val_acc": 0.8584905660377359,
+      "test_acc": 0.788135593220339,
+      "test_loss": 3.5726463390608965,
       "best_override": {
-        "pool_ratio": 0.4
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -359,32 +367,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 75,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5670854826964954
+        "best_epoch": 11,
+        "best_val_acc": 0.8584905660377359,
+        "final_val_acc": 0.8584905660377359,
+        "final_val_loss": 3.5178968231633023
       }
     },
     {
       "fold": 9,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7477477477477478,
-      "test_loss": 0.5140836577157717,
+      "val_acc": 0.7663551401869159,
+      "test_acc": 0.7692307692307693,
+      "test_loss": 2.4753774863023024,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.1,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -397,7 +406,7 @@
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
         "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_1": 0.1,
         "diffpool_ratio_2": 0.25,
         "mincut_ratio_1": 0.5,
         "mincut_ratio_2": 0.5,
@@ -405,32 +414,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 46,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.5613254054938213
+        "best_epoch": 7,
+        "best_val_acc": 0.7663551401869159,
+        "final_val_acc": 0.7663551401869159,
+        "final_val_loss": 2.536039243234652
       }
     },
     {
       "fold": 10,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7117117117117117,
-      "test_loss": 0.5739471273379283,
+      "val_acc": 0.7663551401869159,
+      "test_acc": 0.7264957264957265,
+      "test_loss": 5.590458922915989,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -451,21 +461,21 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 22,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5922436879412962
+        "best_epoch": 5,
+        "best_val_acc": 0.7663551401869159,
+        "final_val_acc": 0.7663551401869159,
+        "final_val_loss": 5.552672230194662
       }
     }
   ],
   "train_cfg": {
-    "seed": 42,
+    "seed": 44,
     "device": "cuda",
     "epochs": 300,
     "patience": 50,
@@ -506,8 +516,8 @@
     "diffpool_entropy_loss_weight": 1.0,
     "mincut_loss_weight": 1.0,
     "mincut_ortho_loss_weight": 1.0,
-    "dense_max_nodes": null,
-    "dense_policy": "error",
+    "dense_max_nodes": 750,
+    "dense_policy": "truncate",
     "degree_as_feature": true,
     "degree_onehot_cap": 100
   }

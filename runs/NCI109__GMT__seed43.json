@@ -1,29 +1,30 @@
 {
-  "model": "ASAP",
-  "mean_test_acc": 0.7259411196911196,
-  "std_test_acc": 0.03770837454338876,
+  "model": "GMT",
+  "mean_test_acc": 0.7431521662474434,
+  "std_test_acc": 0.01676471955451376,
   "folds": [
     {
       "fold": 1,
-      "val_acc": 0.8514851485148515,
-      "test_acc": 0.7053571428571429,
-      "test_loss": 0.593602044241769,
+      "val_acc": 0.7795698924731183,
+      "test_acc": 0.738498789346247,
+      "test_loss": 0.9880237768406441,
       "best_override": {
-        "pool_ratio": 0.6
+        "gmt_k": 16,
+        "gmt_heads": 4
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
+        "gmt_k": 16,
         "gmt_heads": 4,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
@@ -43,19 +44,20 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 23,
-        "best_val_acc": 0.8514851485148515,
-        "final_val_acc": 0.8514851485148515,
-        "final_val_loss": 0.4935230571444672
+        "best_epoch": 231,
+        "best_val_acc": 0.7795698924731183,
+        "final_val_acc": 0.7795698924731183,
+        "final_val_loss": 1.1343812019594255
       }
     },
     {
       "fold": 2,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.75,
-      "test_loss": 0.5513135620525905,
+      "val_acc": 0.793010752688172,
+      "test_acc": 0.7312348668280871,
+      "test_loss": 0.8464874734890085,
       "best_override": {
-        "pool_ratio": 0.5
+        "gmt_k": 50,
+        "gmt_heads": 1
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -69,8 +71,8 @@
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
+        "gmt_k": 50,
+        "gmt_heads": 1,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
@@ -89,33 +91,34 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 71,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5615211766545135
+        "best_epoch": 222,
+        "best_val_acc": 0.793010752688172,
+        "final_val_acc": 0.793010752688172,
+        "final_val_loss": 0.6604997746406063
       }
     },
     {
       "fold": 3,
-      "val_acc": 0.7821782178217822,
-      "test_acc": 0.75,
-      "test_loss": 0.5282128538404193,
+      "val_acc": 0.793010752688172,
+      "test_acc": 0.7360774818401937,
+      "test_loss": 0.7823266490897024,
       "best_override": {
-        "pool_ratio": 0.6
+        "gmt_k": 50,
+        "gmt_heads": 4
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
+        "gmt_k": 50,
         "gmt_heads": 4,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
@@ -135,26 +138,27 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 21,
-        "best_val_acc": 0.7821782178217822,
-        "final_val_acc": 0.7821782178217822,
-        "final_val_loss": 0.5365448800644071
+        "best_epoch": 191,
+        "best_val_acc": 0.793010752688172,
+        "final_val_acc": 0.793010752688172,
+        "final_val_loss": 0.6411886971483949
       }
     },
     {
       "fold": 4,
-      "val_acc": 0.7722772277227723,
-      "test_acc": 0.7297297297297297,
-      "test_loss": 5.106510225717012,
+      "val_acc": 0.7849462365591398,
+      "test_acc": 0.7578692493946732,
+      "test_loss": 0.5404327915165096,
       "best_override": {
-        "pool_ratio": 0.4
+        "gmt_k": 30,
+        "gmt_heads": 4
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -181,19 +185,20 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 101,
-        "best_val_acc": 0.7722772277227723,
-        "final_val_acc": 0.7722772277227723,
-        "final_val_loss": 0.6102960422487542
+        "best_epoch": 153,
+        "best_val_acc": 0.7849462365591398,
+        "final_val_acc": 0.7849462365591398,
+        "final_val_loss": 0.49017910418971894
       }
     },
     {
       "fold": 5,
-      "val_acc": 0.8217821782178217,
-      "test_acc": 0.6756756756756757,
-      "test_loss": 0.6346743471987613,
+      "val_acc": 0.803763440860215,
+      "test_acc": 0.7627118644067796,
+      "test_loss": 0.7215171974449989,
       "best_override": {
-        "pool_ratio": 0.5
+        "gmt_k": 16,
+        "gmt_heads": 4
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -207,7 +212,7 @@
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
+        "gmt_k": 16,
         "gmt_heads": 4,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
@@ -227,19 +232,20 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 74,
-        "best_val_acc": 0.8217821782178217,
-        "final_val_acc": 0.8217821782178217,
-        "final_val_loss": 0.5306766688233555
+        "best_epoch": 181,
+        "best_val_acc": 0.803763440860215,
+        "final_val_acc": 0.803763440860215,
+        "final_val_loss": 0.7357476462600052
       }
     },
     {
       "fold": 6,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7567567567567568,
-      "test_loss": 0.5828444216702435,
+      "val_acc": 0.7956989247311828,
+      "test_acc": 0.7336561743341404,
+      "test_loss": 1.0117365538929624,
       "best_override": {
-        "pool_ratio": 0.5
+        "gmt_k": 16,
+        "gmt_heads": 4
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -253,7 +259,7 @@
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
+        "gmt_k": 16,
         "gmt_heads": 4,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
@@ -273,19 +279,20 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 82,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.6867664497677642
+        "best_epoch": 146,
+        "best_val_acc": 0.7956989247311828,
+        "final_val_acc": 0.7956989247311828,
+        "final_val_loss": 0.9803379697184409
       }
     },
     {
       "fold": 7,
-      "val_acc": 0.7623762376237624,
-      "test_acc": 0.6576576576576577,
-      "test_loss": 0.6083841017774634,
+      "val_acc": 0.7365591397849462,
+      "test_acc": 0.7530266343825666,
+      "test_loss": 0.6729289643989637,
       "best_override": {
-        "pool_ratio": 0.5
+        "gmt_k": 30,
+        "gmt_heads": 1
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -300,7 +307,7 @@
         "set2set_steps": 3,
         "set2set_layers": 1,
         "gmt_k": 30,
-        "gmt_heads": 4,
+        "gmt_heads": 1,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
@@ -319,26 +326,27 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 4,
-        "best_val_acc": 0.7623762376237624,
-        "final_val_acc": 0.7623762376237624,
-        "final_val_loss": 0.6067400273710194
+        "best_epoch": 181,
+        "best_val_acc": 0.7365591397849462,
+        "final_val_acc": 0.7365591397849462,
+        "final_val_loss": 0.7560756136012333
       }
     },
     {
       "fold": 8,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7747747747747747,
-      "test_loss": 0.5057351170359431,
+      "val_acc": 0.760752688172043,
+      "test_acc": 0.7694174757281553,
+      "test_loss": 1.0587722375554947,
       "best_override": {
-        "pool_ratio": 0.4
+        "gmt_k": 30,
+        "gmt_heads": 1
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -346,7 +354,7 @@
         "set2set_steps": 3,
         "set2set_layers": 1,
         "gmt_k": 30,
-        "gmt_heads": 4,
+        "gmt_heads": 1,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
@@ -365,34 +373,35 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 75,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5670854826964954
+        "best_epoch": 174,
+        "best_val_acc": 0.760752688172043,
+        "final_val_acc": 0.760752688172043,
+        "final_val_loss": 0.9555429591927477
       }
     },
     {
       "fold": 9,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7477477477477478,
-      "test_loss": 0.5140836577157717,
+      "val_acc": 0.8118279569892473,
+      "test_acc": 0.7160194174757282,
+      "test_loss": 0.5603533109414924,
       "best_override": {
-        "pool_ratio": 0.6
+        "gmt_k": 50,
+        "gmt_heads": 1
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
+        "gmt_k": 50,
+        "gmt_heads": 1,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
@@ -411,34 +420,35 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 46,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.5613254054938213
+        "best_epoch": 138,
+        "best_val_acc": 0.8118279569892473,
+        "final_val_acc": 0.8118279569892473,
+        "final_val_loss": 0.45594535719963813
       }
     },
     {
       "fold": 10,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7117117117117117,
-      "test_loss": 0.5739471273379283,
+      "val_acc": 0.8145161290322581,
+      "test_acc": 0.7330097087378641,
+      "test_loss": 0.7493556292311659,
       "best_override": {
-        "pool_ratio": 0.6
+        "gmt_k": 16,
+        "gmt_heads": 1
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
         "sort_conv1d_kernel": 5,
         "set2set_steps": 3,
         "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
+        "gmt_k": 16,
+        "gmt_heads": 1,
         "gmt_encoder_blocks": 1,
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
@@ -457,15 +467,15 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 22,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5922436879412962
+        "best_epoch": 195,
+        "best_val_acc": 0.8145161290322581,
+        "final_val_acc": 0.8145161290322581,
+        "final_val_loss": 0.5798645070804063
       }
     }
   ],
   "train_cfg": {
-    "seed": 42,
+    "seed": 43,
     "device": "cuda",
     "epochs": 300,
     "patience": 50,

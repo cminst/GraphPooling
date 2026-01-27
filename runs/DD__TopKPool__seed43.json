@@ -1,59 +1,13 @@
 {
-  "model": "ASAP",
-  "mean_test_acc": 0.7259411196911196,
-  "std_test_acc": 0.03770837454338876,
+  "model": "TopKPool",
+  "mean_test_acc": 0.7496088657105606,
+  "std_test_acc": 0.030761988394394903,
   "folds": [
     {
       "fold": 1,
-      "val_acc": 0.8514851485148515,
-      "test_acc": 0.7053571428571429,
-      "test_loss": 0.593602044241769,
-      "best_override": {
-        "pool_ratio": 0.6
-      },
-      "best_cfg": {
-        "hidden_dim": 64,
-        "num_conv_layers": 3,
-        "dropout": 0.0,
-        "lr": null,
-        "pool_ratio": 0.6,
-        "num_pools": 3,
-        "sort_k": 30,
-        "sort_conv1d_out": 32,
-        "sort_conv1d_kernel": 5,
-        "set2set_steps": 3,
-        "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
-        "gmt_encoder_blocks": 1,
-        "gmt_dropout": 0.0,
-        "gmt_layer_norm": false,
-        "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
-        "diffpool_ratio_2": 0.25,
-        "mincut_ratio_1": 0.5,
-        "mincut_ratio_2": 0.5,
-        "diffpool_link_loss_weight": 1.0,
-        "diffpool_entropy_loss_weight": 1.0,
-        "mincut_loss_weight": 1.0,
-        "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
-        "degree_as_feature": true,
-        "degree_onehot_cap": 100
-      },
-      "train_info": {
-        "best_epoch": 23,
-        "best_val_acc": 0.8514851485148515,
-        "final_val_acc": 0.8514851485148515,
-        "final_val_loss": 0.4935230571444672
-      }
-    },
-    {
-      "fold": 2,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.75,
-      "test_loss": 0.5513135620525905,
+      "val_acc": 0.7924528301886793,
+      "test_acc": 0.7372881355932204,
+      "test_loss": 0.8898725327798875,
       "best_override": {
         "pool_ratio": 0.5
       },
@@ -89,17 +43,17 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 71,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5615211766545135
+        "best_epoch": 37,
+        "best_val_acc": 0.7924528301886793,
+        "final_val_acc": 0.7924528301886793,
+        "final_val_loss": 0.6391824944963995
       }
     },
     {
-      "fold": 3,
-      "val_acc": 0.7821782178217822,
-      "test_acc": 0.75,
-      "test_loss": 0.5282128538404193,
+      "fold": 2,
+      "val_acc": 0.839622641509434,
+      "test_acc": 0.7542372881355932,
+      "test_loss": 0.5420570828146853,
       "best_override": {
         "pool_ratio": 0.6
       },
@@ -109,6 +63,144 @@
         "dropout": 0.0,
         "lr": null,
         "pool_ratio": 0.6,
+        "num_pools": 3,
+        "sort_k": 30,
+        "sort_conv1d_out": 32,
+        "sort_conv1d_kernel": 5,
+        "set2set_steps": 3,
+        "set2set_layers": 1,
+        "gmt_k": 30,
+        "gmt_heads": 4,
+        "gmt_encoder_blocks": 1,
+        "gmt_dropout": 0.0,
+        "gmt_layer_norm": false,
+        "dense_pool_layers": 2,
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25,
+        "mincut_ratio_1": 0.5,
+        "mincut_ratio_2": 0.5,
+        "diffpool_link_loss_weight": 1.0,
+        "diffpool_entropy_loss_weight": 1.0,
+        "mincut_loss_weight": 1.0,
+        "mincut_ortho_loss_weight": 1.0,
+        "dense_max_nodes": null,
+        "dense_policy": "error",
+        "degree_as_feature": true,
+        "degree_onehot_cap": 100
+      },
+      "train_info": {
+        "best_epoch": 18,
+        "best_val_acc": 0.839622641509434,
+        "final_val_acc": 0.839622641509434,
+        "final_val_loss": 0.4881561634675512
+      }
+    },
+    {
+      "fold": 3,
+      "val_acc": 0.8113207547169812,
+      "test_acc": 0.7796610169491526,
+      "test_loss": 0.4900559298062729,
+      "best_override": {
+        "pool_ratio": 0.5
+      },
+      "best_cfg": {
+        "hidden_dim": 64,
+        "num_conv_layers": 3,
+        "dropout": 0.0,
+        "lr": null,
+        "pool_ratio": 0.5,
+        "num_pools": 3,
+        "sort_k": 30,
+        "sort_conv1d_out": 32,
+        "sort_conv1d_kernel": 5,
+        "set2set_steps": 3,
+        "set2set_layers": 1,
+        "gmt_k": 30,
+        "gmt_heads": 4,
+        "gmt_encoder_blocks": 1,
+        "gmt_dropout": 0.0,
+        "gmt_layer_norm": false,
+        "dense_pool_layers": 2,
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25,
+        "mincut_ratio_1": 0.5,
+        "mincut_ratio_2": 0.5,
+        "diffpool_link_loss_weight": 1.0,
+        "diffpool_entropy_loss_weight": 1.0,
+        "mincut_loss_weight": 1.0,
+        "mincut_ortho_loss_weight": 1.0,
+        "dense_max_nodes": null,
+        "dense_policy": "error",
+        "degree_as_feature": true,
+        "degree_onehot_cap": 100
+      },
+      "train_info": {
+        "best_epoch": 12,
+        "best_val_acc": 0.8113207547169812,
+        "final_val_acc": 0.8113207547169812,
+        "final_val_loss": 0.5335743382291974
+      }
+    },
+    {
+      "fold": 4,
+      "val_acc": 0.8207547169811321,
+      "test_acc": 0.6779661016949152,
+      "test_loss": 1.0843726639020241,
+      "best_override": {
+        "pool_ratio": 0.6
+      },
+      "best_cfg": {
+        "hidden_dim": 64,
+        "num_conv_layers": 3,
+        "dropout": 0.0,
+        "lr": null,
+        "pool_ratio": 0.6,
+        "num_pools": 3,
+        "sort_k": 30,
+        "sort_conv1d_out": 32,
+        "sort_conv1d_kernel": 5,
+        "set2set_steps": 3,
+        "set2set_layers": 1,
+        "gmt_k": 30,
+        "gmt_heads": 4,
+        "gmt_encoder_blocks": 1,
+        "gmt_dropout": 0.0,
+        "gmt_layer_norm": false,
+        "dense_pool_layers": 2,
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25,
+        "mincut_ratio_1": 0.5,
+        "mincut_ratio_2": 0.5,
+        "diffpool_link_loss_weight": 1.0,
+        "diffpool_entropy_loss_weight": 1.0,
+        "mincut_loss_weight": 1.0,
+        "mincut_ortho_loss_weight": 1.0,
+        "dense_max_nodes": null,
+        "dense_policy": "error",
+        "degree_as_feature": true,
+        "degree_onehot_cap": 100
+      },
+      "train_info": {
+        "best_epoch": 37,
+        "best_val_acc": 0.8207547169811321,
+        "final_val_acc": 0.8207547169811321,
+        "final_val_loss": 0.714836411880997
+      }
+    },
+    {
+      "fold": 5,
+      "val_acc": 0.8584905660377359,
+      "test_acc": 0.7457627118644068,
+      "test_loss": 0.5838493391618891,
+      "best_override": {
+        "pool_ratio": 0.5
+      },
+      "best_cfg": {
+        "hidden_dim": 64,
+        "num_conv_layers": 3,
+        "dropout": 0.0,
+        "lr": null,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -136,108 +228,16 @@
       },
       "train_info": {
         "best_epoch": 21,
-        "best_val_acc": 0.7821782178217822,
-        "final_val_acc": 0.7821782178217822,
-        "final_val_loss": 0.5365448800644071
-      }
-    },
-    {
-      "fold": 4,
-      "val_acc": 0.7722772277227723,
-      "test_acc": 0.7297297297297297,
-      "test_loss": 5.106510225717012,
-      "best_override": {
-        "pool_ratio": 0.4
-      },
-      "best_cfg": {
-        "hidden_dim": 64,
-        "num_conv_layers": 3,
-        "dropout": 0.0,
-        "lr": null,
-        "pool_ratio": 0.4,
-        "num_pools": 3,
-        "sort_k": 30,
-        "sort_conv1d_out": 32,
-        "sort_conv1d_kernel": 5,
-        "set2set_steps": 3,
-        "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
-        "gmt_encoder_blocks": 1,
-        "gmt_dropout": 0.0,
-        "gmt_layer_norm": false,
-        "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
-        "diffpool_ratio_2": 0.25,
-        "mincut_ratio_1": 0.5,
-        "mincut_ratio_2": 0.5,
-        "diffpool_link_loss_weight": 1.0,
-        "diffpool_entropy_loss_weight": 1.0,
-        "mincut_loss_weight": 1.0,
-        "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
-        "degree_as_feature": true,
-        "degree_onehot_cap": 100
-      },
-      "train_info": {
-        "best_epoch": 101,
-        "best_val_acc": 0.7722772277227723,
-        "final_val_acc": 0.7722772277227723,
-        "final_val_loss": 0.6102960422487542
-      }
-    },
-    {
-      "fold": 5,
-      "val_acc": 0.8217821782178217,
-      "test_acc": 0.6756756756756757,
-      "test_loss": 0.6346743471987613,
-      "best_override": {
-        "pool_ratio": 0.5
-      },
-      "best_cfg": {
-        "hidden_dim": 64,
-        "num_conv_layers": 3,
-        "dropout": 0.0,
-        "lr": null,
-        "pool_ratio": 0.5,
-        "num_pools": 3,
-        "sort_k": 30,
-        "sort_conv1d_out": 32,
-        "sort_conv1d_kernel": 5,
-        "set2set_steps": 3,
-        "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
-        "gmt_encoder_blocks": 1,
-        "gmt_dropout": 0.0,
-        "gmt_layer_norm": false,
-        "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
-        "diffpool_ratio_2": 0.25,
-        "mincut_ratio_1": 0.5,
-        "mincut_ratio_2": 0.5,
-        "diffpool_link_loss_weight": 1.0,
-        "diffpool_entropy_loss_weight": 1.0,
-        "mincut_loss_weight": 1.0,
-        "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
-        "degree_as_feature": true,
-        "degree_onehot_cap": 100
-      },
-      "train_info": {
-        "best_epoch": 74,
-        "best_val_acc": 0.8217821782178217,
-        "final_val_acc": 0.8217821782178217,
-        "final_val_loss": 0.5306766688233555
+        "best_val_acc": 0.8584905660377359,
+        "final_val_acc": 0.8584905660377359,
+        "final_val_loss": 0.4699560195769904
       }
     },
     {
       "fold": 6,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7567567567567568,
-      "test_loss": 0.5828444216702435,
+      "val_acc": 0.839622641509434,
+      "test_acc": 0.7627118644067796,
+      "test_loss": 0.4953024114592601,
       "best_override": {
         "pool_ratio": 0.5
       },
@@ -273,63 +273,17 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 82,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.6867664497677642
+        "best_epoch": 13,
+        "best_val_acc": 0.839622641509434,
+        "final_val_acc": 0.839622641509434,
+        "final_val_loss": 0.4738937054040297
       }
     },
     {
       "fold": 7,
-      "val_acc": 0.7623762376237624,
-      "test_acc": 0.6576576576576577,
-      "test_loss": 0.6083841017774634,
-      "best_override": {
-        "pool_ratio": 0.5
-      },
-      "best_cfg": {
-        "hidden_dim": 64,
-        "num_conv_layers": 3,
-        "dropout": 0.0,
-        "lr": null,
-        "pool_ratio": 0.5,
-        "num_pools": 3,
-        "sort_k": 30,
-        "sort_conv1d_out": 32,
-        "sort_conv1d_kernel": 5,
-        "set2set_steps": 3,
-        "set2set_layers": 1,
-        "gmt_k": 30,
-        "gmt_heads": 4,
-        "gmt_encoder_blocks": 1,
-        "gmt_dropout": 0.0,
-        "gmt_layer_norm": false,
-        "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
-        "diffpool_ratio_2": 0.25,
-        "mincut_ratio_1": 0.5,
-        "mincut_ratio_2": 0.5,
-        "diffpool_link_loss_weight": 1.0,
-        "diffpool_entropy_loss_weight": 1.0,
-        "mincut_loss_weight": 1.0,
-        "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
-        "degree_as_feature": true,
-        "degree_onehot_cap": 100
-      },
-      "train_info": {
-        "best_epoch": 4,
-        "best_val_acc": 0.7623762376237624,
-        "final_val_acc": 0.7623762376237624,
-        "final_val_loss": 0.6067400273710194
-      }
-    },
-    {
-      "fold": 8,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7747747747747747,
-      "test_loss": 0.5057351170359431,
+      "val_acc": 0.8584905660377359,
+      "test_acc": 0.7457627118644068,
+      "test_loss": 0.9739306902481337,
       "best_override": {
         "pool_ratio": 0.4
       },
@@ -365,26 +319,72 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 75,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5670854826964954
+        "best_epoch": 40,
+        "best_val_acc": 0.8584905660377359,
+        "final_val_acc": 0.8584905660377359,
+        "final_val_loss": 0.5426988849100077
+      }
+    },
+    {
+      "fold": 8,
+      "val_acc": 0.7924528301886793,
+      "test_acc": 0.7542372881355932,
+      "test_loss": 0.5101750129360264,
+      "best_override": {
+        "pool_ratio": 0.4
+      },
+      "best_cfg": {
+        "hidden_dim": 64,
+        "num_conv_layers": 3,
+        "dropout": 0.0,
+        "lr": null,
+        "pool_ratio": 0.4,
+        "num_pools": 3,
+        "sort_k": 30,
+        "sort_conv1d_out": 32,
+        "sort_conv1d_kernel": 5,
+        "set2set_steps": 3,
+        "set2set_layers": 1,
+        "gmt_k": 30,
+        "gmt_heads": 4,
+        "gmt_encoder_blocks": 1,
+        "gmt_dropout": 0.0,
+        "gmt_layer_norm": false,
+        "dense_pool_layers": 2,
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25,
+        "mincut_ratio_1": 0.5,
+        "mincut_ratio_2": 0.5,
+        "diffpool_link_loss_weight": 1.0,
+        "diffpool_entropy_loss_weight": 1.0,
+        "mincut_loss_weight": 1.0,
+        "mincut_ortho_loss_weight": 1.0,
+        "dense_max_nodes": null,
+        "dense_policy": "error",
+        "degree_as_feature": true,
+        "degree_onehot_cap": 100
+      },
+      "train_info": {
+        "best_epoch": 14,
+        "best_val_acc": 0.7924528301886793,
+        "final_val_acc": 0.7924528301886793,
+        "final_val_loss": 0.5439396635541376
       }
     },
     {
       "fold": 9,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7477477477477478,
-      "test_loss": 0.5140836577157717,
+      "val_acc": 0.8785046728971962,
+      "test_acc": 0.7435897435897436,
+      "test_loss": 1.3294706538192227,
       "best_override": {
-        "pool_ratio": 0.6
+        "pool_ratio": 0.5
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -411,26 +411,26 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 46,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.5613254054938213
+        "best_epoch": 65,
+        "best_val_acc": 0.8785046728971962,
+        "final_val_acc": 0.8785046728971962,
+        "final_val_loss": 0.6859938535734872
       }
     },
     {
       "fold": 10,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7117117117117117,
-      "test_loss": 0.5739471273379283,
+      "val_acc": 0.822429906542056,
+      "test_acc": 0.7948717948717948,
+      "test_loss": 0.5062452192999359,
       "best_override": {
-        "pool_ratio": 0.6
+        "pool_ratio": 0.5
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -457,15 +457,15 @@
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 22,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5922436879412962
+        "best_epoch": 23,
+        "best_val_acc": 0.822429906542056,
+        "final_val_acc": 0.822429906542056,
+        "final_val_loss": 0.5376204703455774
       }
     }
   ],
   "train_cfg": {
-    "seed": 42,
+    "seed": 43,
     "device": "cuda",
     "epochs": 300,
     "patience": 50,

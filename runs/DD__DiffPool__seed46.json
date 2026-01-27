@@ -1,22 +1,23 @@
 {
-  "model": "ASAP",
-  "mean_test_acc": 0.7259411196911196,
-  "std_test_acc": 0.03770837454338876,
+  "model": "DiffPool",
+  "mean_test_acc": 0.7733956250905403,
+  "std_test_acc": 0.03659274703447139,
   "folds": [
     {
       "fold": 1,
-      "val_acc": 0.8514851485148515,
-      "test_acc": 0.7053571428571429,
-      "test_loss": 0.593602044241769,
+      "val_acc": 0.8113207547169812,
+      "test_acc": 0.788135593220339,
+      "test_loss": 5.648185374373097,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -37,25 +38,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 23,
-        "best_val_acc": 0.8514851485148515,
-        "final_val_acc": 0.8514851485148515,
-        "final_val_loss": 0.4935230571444672
+        "best_epoch": 5,
+        "best_val_acc": 0.8113207547169812,
+        "final_val_acc": 0.8113207547169812,
+        "final_val_loss": 5.541591869210297
       }
     },
     {
       "fold": 2,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.75,
-      "test_loss": 0.5513135620525905,
+      "val_acc": 0.8113207547169812,
+      "test_acc": 0.7372881355932204,
+      "test_loss": 3.0290805727748547,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -83,32 +85,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 71,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5615211766545135
+        "best_epoch": 14,
+        "best_val_acc": 0.8113207547169812,
+        "final_val_acc": 0.8113207547169812,
+        "final_val_loss": 2.9678086604712144
       }
     },
     {
       "fold": 3,
-      "val_acc": 0.7821782178217822,
-      "test_acc": 0.75,
-      "test_loss": 0.5282128538404193,
+      "val_acc": 0.8301886792452831,
+      "test_acc": 0.8220338983050848,
+      "test_loss": 4.69215853739593,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -129,32 +132,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 21,
-        "best_val_acc": 0.7821782178217822,
-        "final_val_acc": 0.7821782178217822,
-        "final_val_loss": 0.5365448800644071
+        "best_epoch": 8,
+        "best_val_acc": 0.8301886792452831,
+        "final_val_acc": 0.8301886792452831,
+        "final_val_loss": 4.669651112466489
       }
     },
     {
       "fold": 4,
-      "val_acc": 0.7722772277227723,
-      "test_acc": 0.7297297297297297,
-      "test_loss": 5.106510225717012,
+      "val_acc": 0.8113207547169812,
+      "test_acc": 0.7457627118644068,
+      "test_loss": 3.1946112988358837,
       "best_override": {
-        "pool_ratio": 0.4
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -175,25 +179,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 101,
-        "best_val_acc": 0.7722772277227723,
-        "final_val_acc": 0.7722772277227723,
-        "final_val_loss": 0.6102960422487542
+        "best_epoch": 12,
+        "best_val_acc": 0.8113207547169812,
+        "final_val_acc": 0.8113207547169812,
+        "final_val_loss": 3.2273093844359777
       }
     },
     {
       "fold": 5,
-      "val_acc": 0.8217821782178217,
-      "test_acc": 0.6756756756756757,
-      "test_loss": 0.6346743471987613,
+      "val_acc": 0.839622641509434,
+      "test_acc": 0.7966101694915254,
+      "test_loss": 2.4195101341958773,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -221,25 +226,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 74,
-        "best_val_acc": 0.8217821782178217,
-        "final_val_acc": 0.8217821782178217,
-        "final_val_loss": 0.5306766688233555
+        "best_epoch": 30,
+        "best_val_acc": 0.839622641509434,
+        "final_val_acc": 0.839622641509434,
+        "final_val_loss": 2.515973149605517
       }
     },
     {
       "fold": 6,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7567567567567568,
-      "test_loss": 0.5828444216702435,
+      "val_acc": 0.7924528301886793,
+      "test_acc": 0.7372881355932204,
+      "test_loss": 2.2059381977986483,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.1,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -259,7 +265,7 @@
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
         "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_1": 0.1,
         "diffpool_ratio_2": 0.25,
         "mincut_ratio_1": 0.5,
         "mincut_ratio_2": 0.5,
@@ -267,25 +273,26 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 82,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.6867664497677642
+        "best_epoch": 15,
+        "best_val_acc": 0.7924528301886793,
+        "final_val_acc": 0.7924528301886793,
+        "final_val_loss": 2.032823144264941
       }
     },
     {
       "fold": 7,
-      "val_acc": 0.7623762376237624,
-      "test_acc": 0.6576576576576577,
-      "test_loss": 0.6083841017774634,
+      "val_acc": 0.839622641509434,
+      "test_acc": 0.7627118644067796,
+      "test_loss": 4.539218959161791,
       "best_override": {
-        "pool_ratio": 0.5
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
@@ -313,32 +320,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 4,
-        "best_val_acc": 0.7623762376237624,
-        "final_val_acc": 0.7623762376237624,
-        "final_val_loss": 0.6067400273710194
+        "best_epoch": 8,
+        "best_val_acc": 0.839622641509434,
+        "final_val_acc": 0.839622641509434,
+        "final_val_loss": 4.520040431112613
       }
     },
     {
       "fold": 8,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7747747747747747,
-      "test_loss": 0.5057351170359431,
+      "val_acc": 0.8490566037735849,
+      "test_acc": 0.7372881355932204,
+      "test_loss": 2.467210361513041,
       "best_override": {
-        "pool_ratio": 0.4
+        "diffpool_ratio_1": 0.1,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.4,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -351,7 +359,7 @@
         "gmt_dropout": 0.0,
         "gmt_layer_norm": false,
         "dense_pool_layers": 2,
-        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_1": 0.1,
         "diffpool_ratio_2": 0.25,
         "mincut_ratio_1": 0.5,
         "mincut_ratio_2": 0.5,
@@ -359,32 +367,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 75,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5670854826964954
+        "best_epoch": 7,
+        "best_val_acc": 0.8490566037735849,
+        "final_val_acc": 0.8490566037735849,
+        "final_val_loss": 2.540972115858546
       }
     },
     {
       "fold": 9,
-      "val_acc": 0.7326732673267327,
-      "test_acc": 0.7477477477477478,
-      "test_loss": 0.5140836577157717,
+      "val_acc": 0.8411214953271028,
+      "test_acc": 0.8376068376068376,
+      "test_loss": 2.59782072621533,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -405,32 +414,33 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 46,
-        "best_val_acc": 0.7326732673267327,
-        "final_val_acc": 0.7326732673267327,
-        "final_val_loss": 0.5613254054938213
+        "best_epoch": 20,
+        "best_val_acc": 0.8411214953271028,
+        "final_val_acc": 0.8411214953271028,
+        "final_val_loss": 2.662758885142959
       }
     },
     {
       "fold": 10,
-      "val_acc": 0.7425742574257426,
-      "test_acc": 0.7117117117117117,
-      "test_loss": 0.5739471273379283,
+      "val_acc": 0.8504672897196262,
+      "test_acc": 0.7692307692307693,
+      "test_loss": 3.02163730115972,
       "best_override": {
-        "pool_ratio": 0.6
+        "diffpool_ratio_1": 0.25,
+        "diffpool_ratio_2": 0.25
       },
       "best_cfg": {
         "hidden_dim": 64,
         "num_conv_layers": 3,
         "dropout": 0.0,
         "lr": null,
-        "pool_ratio": 0.6,
+        "pool_ratio": 0.5,
         "num_pools": 3,
         "sort_k": 30,
         "sort_conv1d_out": 32,
@@ -451,21 +461,21 @@
         "diffpool_entropy_loss_weight": 1.0,
         "mincut_loss_weight": 1.0,
         "mincut_ortho_loss_weight": 1.0,
-        "dense_max_nodes": null,
-        "dense_policy": "error",
+        "dense_max_nodes": 750,
+        "dense_policy": "truncate",
         "degree_as_feature": true,
         "degree_onehot_cap": 100
       },
       "train_info": {
-        "best_epoch": 22,
-        "best_val_acc": 0.7425742574257426,
-        "final_val_acc": 0.7425742574257426,
-        "final_val_loss": 0.5922436879412962
+        "best_epoch": 14,
+        "best_val_acc": 0.8504672897196262,
+        "final_val_acc": 0.8504672897196262,
+        "final_val_loss": 2.8567236940437386
       }
     }
   ],
   "train_cfg": {
-    "seed": 42,
+    "seed": 46,
     "device": "cuda",
     "epochs": 300,
     "patience": 50,
@@ -506,8 +516,8 @@
     "diffpool_entropy_loss_weight": 1.0,
     "mincut_loss_weight": 1.0,
     "mincut_ortho_loss_weight": 1.0,
-    "dense_max_nodes": null,
-    "dense_policy": "error",
+    "dense_max_nodes": 750,
+    "dense_policy": "truncate",
     "degree_as_feature": true,
     "degree_onehot_cap": 100
   }
